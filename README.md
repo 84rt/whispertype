@@ -87,3 +87,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [keyboard](https://github.com/boppreh/keyboard) for global hotkey support
 - [sounddevice](https://github.com/spatialaudio/python-sounddevice) for audio recording
 - [xdotool](https://github.com/jordansissel/xdotool) for simulating keystrokes
+
+ ## To Do
+ - Fix bugs
+   - There is a pretty problematic bug, which is that when the user stops speaking and there is a silence, it doesn't... when the button... when the keyboard button is pressed, it will start recording again and it will cancel out the previous things, so it essentially breaks the recording and the session.To fix this, make sure that when the silence is triggered, when next time the button is pressed, the previous recording is put together and sent, as opposed to new recordings being started and only that being sent.
